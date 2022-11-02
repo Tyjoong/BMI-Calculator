@@ -1,0 +1,58 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package important4;
+
+import java.util.Scanner;
+
+/**
+ * Salma Cahyaningtyas
+ * X RPL 6 / 36
+ */
+public class Important4 {
+
+   
+    public static void main(String[] args) {
+        Scanner input =new Scanner(System.in);
+        
+        System.out.println("WELCOME TO BMI (Body Mess Index) CALCULATOR");
+        System.out.print("Please enter your name: ");
+        String name=input.nextLine();
+        System.out.println("How to enter your height = If your height is 160, you just need input 1.60. As well as others.");
+        System.out.print("Enter your height: ");
+        double height=input.nextDouble();
+        System.out.print("Enter your weight: ");
+        int weight=input.nextInt();
+        
+        System.out.println("====================================================================================================");
+        
+        double bmi = weight/(height*height);
+        System.out.println("Results: "+bmi);
+        
+        if (bmi<=18)
+        {
+            System.out.println("Underweight");
+            System.out.println("You need more eat well sweeatie..");
+        }else if (bmi<=25)
+        {
+            System.out.println("Normal");
+            System.out.println("Ohh woww.. I think you're someone who lives a healthy lifestyle");
+        }else if (bmi<=30)
+        {
+            System.out.println("Overweight");
+            System.out.println("Its okay baby.. you're beautiful in every way, even that your ugly points..");
+        }else
+        {
+            System.out.println("Obese");
+            System.out.println("Its okay baby.. you're beautiful in every way, even that your ugly points..");
+            System.out.println("You simply need to lose a few pounds.");
+            System.out.println("Paiktingg Jagiyaa..");
+        }
+        
+        
+    }
+        
+    
+}
